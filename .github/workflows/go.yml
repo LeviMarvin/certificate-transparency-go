@@ -17,9 +17,14 @@ jobs:
       uses: actions/setup-go@v2
       with:
         go-version: 1.9
+        
+    - name: Debug
+      run: |
+        echo ${GOPATH}
+        echo ${GOROOT}
     
-    - name: Build
-      run: go build -v ./...
+    #- name: Build
+    #  run: go build -v ./...
 
-    - name: Test
-      run: go test -v ./...
+    #- name: Test
+    #  run: go test -v ./...
